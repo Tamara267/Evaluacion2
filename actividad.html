@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario centrado</title>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h1 class="text-center">Mi plataforma</h1>
+    <div class="mt-5">
+      <h4><i class="bi bi-cart me-2"></i>Carrito de Compras</h4>
+      <ul id="cart-items" class="list-group mb-3"></ul>
+      <button class="btn btn-danger" onclick="clearCart()">Vaciar Carrito</button>
+    </div>
+    <h3 class="text-center my-4">Catálogo de Productos</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://static.wikia.nocookie.net/crash/images/b/b1/Warped_Portada.jpg/revision/latest?cb=20190813214354&path-prefix=es" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Crash Bandicoot 3</h5>
+            <p class="card-text">Juego ps1</p>
+            <a href="#" class="btn btn-outline-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://static.wikia.nocookie.net/crash/images/5/5f/Crash_Bandicoot_2_cubierta.jpg/revision/latest/scale-to-width-down/1200?cb=20250127102136&path-prefix=es" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Crash Bandicoot 2</h5>
+            <p class="card-text">Juego ps1</p>
+            <a href="#" class="btn btn-outline-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://i.3djuegos.com/juegos/7004/spyro_the_dragon/fotos/ficha/spyro_the_dragon-1725665.webp" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Spyro The Dragon</h5>
+            <p class="card-text">Juego ps1</p>
+            <a href="#" class="btn btn-outline-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-center mt-5">Datos</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form class="row g-3 mt-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Apellido">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Correo</label>
+            <input type="email" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Contraseña</label>
+            <input type="password" class="form-control">
+          </div>
+          <div class="col-12">
+            <label class="form-label">Dirección</label>
+            <input type="text" class="form-control" placeholder="Avenida 1234">
+          </div>
+          <div class="col-12">
+            <label class="form-label">Referencia</label>
+            <input type="text" class="form-control" placeholder="Departamento, oficina, etc.">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Comuna</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Región</label>
+            <select class="form-select">
+              <option selected>Elige</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="form-label d-block">Género</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="genero" checked>
+              <label class="form-check-label">Femenino</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="genero">
+              <label class="form-check-label">Masculino</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="genero" disabled>
+              <label class="form-check-label">Otro</label>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
